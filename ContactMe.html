@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8" />
+   <title>Contact Me</title>
+   </head>
+   <body>
+     <h1>My Contact Details</h1>
+     <BR />
+     4210 Mozart Brigade Lane, Apt. E, <BR />
+     Fairfax VA 22033
+     <BR />
+     MinhajArifinKgs@gmail.com
+     <<hr>
+     <!--the Form action attribute decides where to take the user after
+   the form is submitted. Usually this is index.html to take the user back to
+ the main page.if iin the  scenario we want the form to automatically load the users
+default email and prepopulate the email with what was entered in the form.
+this is why we have the action attribute equalling to the mailto:minhajarifinkgs@gmail.com  -->
+<form action="mailto:minhajarifinkgs@gmail.com" subject="feedback" method="post" enctype="text/plain">
+  <label for="Name">Please enter your full name</label>
+  <!--the value allows you to prepopulate the field -->
+  <input type="text" name="name" value="">
+  <BR />
+  <label for="Email">Your Email</label>
+  <!-- The placeholder attribute allwos you to put some help text inside the field  -->
+  <input type="email" name="Your Email" placeholder="be sure to add the @ sign"><BR />
+
+  <label for="YourMessage">Your Message</label><BR />
+  <!-- this is the html element called text area -->
+  <textarea name="YourMessage" rows="8" cols="30"></textarea><BR />
+  <label for="Submit">Submit the Form</label><BR />
+  <!--the value attribute is the label on the submit button -->
+  <input type="Submit" name="" value="Submit">
+</form>
+
+   </body>
+</html>
